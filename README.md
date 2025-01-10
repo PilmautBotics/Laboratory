@@ -15,6 +15,12 @@
 
 Ex : different backbones, different detection heads / modules can be implemented, different losses can be implemented. A detection network is then constructed by "plugging" / putting these modules together.
 
+It is organized as follow: 
+Laboratory: 
+---- Classificator : implementation for classification use cases
+---- Detector : implementation for detection use cases
+---- Segmentator : implementation for segmentation use cases
+
 ### Installation
 
 Laboratory and almost all its Python dependencies can be installed directly with pip3 as it is structured as a Python package.
