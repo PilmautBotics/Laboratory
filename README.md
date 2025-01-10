@@ -2,7 +2,7 @@
 
 ### Description
 
-*Laboratory* is a Python library workspace for :
+*Laboratory* is a Python library workspace for:
 
 * Executing and test neural network
  * Generating visual results
@@ -11,28 +11,24 @@
  * **These tools / components should be generic and have carefully standardized inputs / outputs !**
 
 * Training neural networks with PyTorch
- * <Laboratory>/detector/core/modules/ (to change to torch_modules) should gather an ordered set/pool or Torch modules with common and standardized inputs / outputs that can be used as basic building blocks for constructing object detection models
+ * <Laboratory>/detector/core/modules/ (to change to torch_modules) should gather an ordered set/pool or Torch modules with common and standardized inputs / outputs that can be used as basic building blocks for constructing detector models
 
 Ex : different backbones, different detection heads / modules can be implemented, different losses can be implemented. A detection network is then constructed by "plugging" / putting these modules together.
 
-
 ### Installation
 
-Laboratory and almost all its Python dependencies can be installed directly with pip3 as it is structured as a Python package. 
+Laboratory and almost all its Python dependencies can be installed directly with pip3 as it is structured as a Python package.
 
-Other dependecies : OpenCV3
+You can download Miniconda to install minimal anaconda environmnent via: https://docs.anaconda.com/miniconda/
 
+Create environment  for development:
 <pre>
-pip3 install -e <path_to_Laboratory>
+conda create --name pytorch_env python=3.9.16
+conda activate pytorch_env
+pip install torch==1.13.1 torchvision==0.14.1 scikit-learn==1.2.1 torch-geometric==2.2.0
 </pre>
 
 ### Coding and testing rules
 
 TODO
-
-### Examples
-
-For use examples of Laboratory library, you can check :
-
-* working_nb.ipynb
 
